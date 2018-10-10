@@ -1,8 +1,13 @@
 var address = "Bhaktapur";
 
+//function within function is a closure concept
 function welcome(name) {
-    var greet = "Hello";
-    return greet + " " + name + " welcome to " + address;
+    var greeting = "Hello";
+    return greeting + " " + name + " welcome to " + address;
+
+    function hello() {
+        return 'Hello', name;
+    }
 }
 var a = welcome("Mohammad");
 console.log(a);
