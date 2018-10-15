@@ -10,7 +10,7 @@ function firstTask(task1, callback) {
 function secondTask(task2, callback) {
     setTimeout(function() {
         callback({
-            Secon_task: task2
+            Second_task: task2
         })
     }, 3000);
 }
